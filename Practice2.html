@@ -1,56 +1,89 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<title></title>
-	</head>
-	<body>
-		<h1>앵커 만들기</h1>
-		<p>웹 문서가 너무 길 경우 필요한 곳으로 바로 이동하는 기능</p>
-		<ul>
-			<li><a href="#contents1">Menu 1</a></li>
-			<li><a href="#contents2">Menu 2</a></li>
-			<li><a href="#contents3">Menu 3</a></li>
-			<li><a href="#contents4">Menu 4</a></li>
-		</ul>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+
+	<h1>여름방학 특강 신청</h1>
+
+	<form>
+
+		<fieldset>
+			<legend>수강과목</legend>
+			<label>
+				영어회화 (초급) 
+				<select name="day">
+					<option value="1" selected>오전</option>
+					<option value="2" selected>오후</option>
+
+				</select>
+				<input type="time" value="09:00">
+
+				<select name="day">
+					<option value="1" selected>오전</option>
+					<option value="2" selected>오후</option>
+
+				</select>
+				<input type="time" value="11:00">
+				
+			</label>
+		</fieldset> 
+
+		<fieldset>
+			<legend>신청자</legend>
+			<div>
+				<label>
+					이름 <input type="text" size="30">
+				</label>
+			</div>
+				<br>
+			<div>
+				<label>
+					학번 <input type="text" value="하이픈 없이 입력">
+				</label>
+			</div>
+				<br>
+			<div>
+				<label>
+					학과 <select name="major">
+						<option value="1" selected>컴퓨터공학과</option>
+						<option value="2">시각디자인과</option>
+						<option value="3">심리학과</option>
+						<option value="4">언어학과</option>
+						<option value="5">수학과</option>
+						<option value="6">철학과</option>
+					</select>
+				</label>
+			</div>
+		</fieldset> 
+
+		<fieldset>
+			<legend>교재 주문</legend>
+			<div>
+				<label>
+					교재 <input type="number" min="0" max="3" value="0">
+				</label>
+			</div>
+				<br>
+			<div>
+				<label>
+					워크시트 <input type="number" min="0" max="3" value="0">
+				</label>
+			</div>
+				<br>
+			<div>
+				<label>
+					단체주문 <input type="number" min="0" max="100" step="10" value="0">
+				</label>
+			</div>
+		</fieldset> 
+
+		<input type="reset" value="Reset">
+		<button type="submit">Submit</button>
 		
-		<h3 id="contents1">Menu 1</h3>
-		<p>대법원장과 대법관이 아닌 법관의 임기는 10년으로 하며, 법률이 정하는 바에 의하여 연임할 수 있다. 국민의 자유와 권리는 헌법에 열거되지 아니한 이유로 경시되지 아니한다.</p>
+	</form>
 
-		<p>여자의 근로는 특별한 보호를 받으며, 고용·임금 및 근로조건에 있어서 부당한 차별을 받지 아니한다. 대법원장은 국회의 동의를 얻어 대통령이 임명한다.</p>
-
-		<p>국가의 세입·세출의 결산, 국가 및 법률이 정한 단체의 회계검사와 행정기관 및 공무원의 직무에 관한 감찰을 하기 위하여 대통령 소속하에 감사원을 둔다.</p>
-
-		<p>대통령·국무총리·국무위원·행정각부의 장·헌법재판소 재판관·법관·중앙선거관리위원회 위원·감사원장·감사위원 기타 법률이 정한 공무원이 그 직무집행에 있어서 헌법이나 법률을 위배한 때에는 국회는 탄핵의 소추를 의결할 수 있다.</p>
-		
-		<h3 id="contents2">Menu 2</h3>
-		<p>대법원장과 대법관이 아닌 법관의 임기는 10년으로 하며, 법률이 정하는 바에 의하여 연임할 수 있다. 국민의 자유와 권리는 헌법에 열거되지 아니한 이유로 경시되지 아니한다.</p>
-
-		<p>여자의 근로는 특별한 보호를 받으며, 고용·임금 및 근로조건에 있어서 부당한 차별을 받지 아니한다. 대법원장은 국회의 동의를 얻어 대통령이 임명한다.</p>
-
-		<p>국가의 세입·세출의 결산, 국가 및 법률이 정한 단체의 회계검사와 행정기관 및 공무원의 직무에 관한 감찰을 하기 위하여 대통령 소속하에 감사원을 둔다.</p>
-
-		<p>대통령·국무총리·국무위원·행정각부의 장·헌법재판소 재판관·법관·중앙선거관리위원회 위원·감사원장·감사위원 기타 법률이 정한 공무원이 그 직무집행에 있어서 헌법이나 법률을 위배한 때에는 국회는 탄핵의 소추를 의결할 수 있다.</p>
-		
-		<h3 id="contents3">Menu 3</h3>
-		<p>대법원장과 대법관이 아닌 법관의 임기는 10년으로 하며, 법률이 정하는 바에 의하여 연임할 수 있다. 국민의 자유와 권리는 헌법에 열거되지 아니한 이유로 경시되지 아니한다.</p>
-
-		<p>여자의 근로는 특별한 보호를 받으며, 고용·임금 및 근로조건에 있어서 부당한 차별을 받지 아니한다. 대법원장은 국회의 동의를 얻어 대통령이 임명한다.</p>
-
-		<p>국가의 세입·세출의 결산, 국가 및 법률이 정한 단체의 회계검사와 행정기관 및 공무원의 직무에 관한 감찰을 하기 위하여 대통령 소속하에 감사원을 둔다.</p>
-
-		<p>대통령·국무총리·국무위원·행정각부의 장·헌법재판소 재판관·법관·중앙선거관리위원회 위원·감사원장·감사위원 기타 법률이 정한 공무원이 그 직무집행에 있어서 헌법이나 법률을 위배한 때에는 국회는 탄핵의 소추를 의결할 수 있다.</p>
-		
-		<h3 id="contents4">Menu 4</h3>
-		<p>대법원장과 대법관이 아닌 법관의 임기는 10년으로 하며, 법률이 정하는 바에 의하여 연임할 수 있다. 국민의 자유와 권리는 헌법에 열거되지 아니한 이유로 경시되지 아니한다.</p>
-
-		<p>여자의 근로는 특별한 보호를 받으며, 고용·임금 및 근로조건에 있어서 부당한 차별을 받지 아니한다. 대법원장은 국회의 동의를 얻어 대통령이 임명한다.</p>
-
-		<p>국가의 세입·세출의 결산, 국가 및 법률이 정한 단체의 회계검사와 행정기관 및 공무원의 직무에 관한 감찰을 하기 위하여 대통령 소속하에 감사원을 둔다.</p>
-
-		<p>대통령·국무총리·국무위원·행정각부의 장·헌법재판소 재판관·법관·중앙선거관리위원회 위원·감사원장·감사위원 기타 법률이 정한 공무원이 그 직무집행에 있어서 헌법이나 법률을 위배한 때에는 국회는 탄핵의 소추를 의결할 수 있다.</p>
-
-
-	
-	</body>
+</body>
 </html>
