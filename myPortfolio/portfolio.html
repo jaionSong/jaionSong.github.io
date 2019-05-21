@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <nav>
+                <div class="logo">
+                    <a href="#"><img src="images/logo.png" alt="logo"></a> 
+                </div>
+                <div class="navigation">
+                    <ul>
+                        <li><a href="#">Hi, I'm Jaion</a></li>
+                        <li><a href="#"><span>Portfolio</span></a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Follow me</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- <img src="images/Edin.png" alt="header_background_edin"> -->
+        </header>
+        <section>
+            <div class="content">
+                <h1>Portfolio</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            <div class="keywords_wrap">
+                <div class="keyword" id="all"><p>All</p></div>
+                <div class="keyword" id="web"><p>Web Design</p></div>
+                <div class="keyword" id="uxui"><p>UX|UI</p></div>
+                <div class="keyword" id="digiart"><p>Digital Art</p></div>
+                <div class="keyword" id="graphic"><p>Graphic Design</p></div>
+                <div class="keyword" id="illustration"><p>Illustration</p></div>
+            </div>
+            <div class="thumbnails_wrap">
+                <div class="row">
+                    <div class="thumbnail" id="thumb1">
+                        <div class="text"><p>C-MIST motion poster</p><br> <span>Motion poster design for<br> global connectivity.</span></div>
+                    </div>
+                    <div class="thumbnail" id="thumb2">
+                        <div class="text"><p>Guilt Trip website</p><br><span>New website design for the famous<br>donut and coffee place in East Belfast.</span></div>
+                    </div>
+                    <div class="thumbnail" id="thumb3">
+                        <div class="text"><p>Oceanic United Nations</p><br><span>Web portfolio for Oceanic United Nations<br>and its currency.</span></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="thumbnail" id="thumb4">
+                        <div class="text"><p>Dominiansland</p><br><span>3D domino game in Unity.</span></div>
+                    </div>
+                    <div class="thumbnail" id="thumb5">
+                        <div class="text"><p>Where Am I</p><br><span>Being lost in the City of Einburgh wihtin illustration animation.</span></div>
+                    </div>
+                    <div class="thumbnail" id="thumb6">
+                        <div class="text"><p>Virtual Driving Simulation</p><br><span>C-MIST submarine train driving simulation<br>built with Processing.</span></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="thumbnail" id="thumb7">
+                        <div class="text"><p>Nike typography</p><br><span>Typography design with shoes.</span></div>
+                    </div>
+                    <div class="thumbnail" id="thumb8">
+                        <div class="text"><p>Three Siblings illustration</p><br><span>Three siblings in icon design and e-book illustration.</span></div>
+                    </div>
+                    <div class="thumbnail" id="thumb9">
+                        <div class="text"><p>Coffee-necessity</p><br><span>Illustration for coffee brand.</span></div>
+                    </div>
+                </div>
+            </div>
+
+            
+        </section>
+        <div class="modal" id="modal3">
+            <div class="popup">
+                <div class="image">
+                    <div class="close" id="top"><p>X</p></div>
+                    <img src="images/Oceanic.png" alt="ocn_website_popup">
+                    
+                </div>
+            </div>
+        </div>
+        <footer>
+            <p>Copyright © 2019 by Jaion Song. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script src="script/jquery.js"></script>
+    <script>
+        $(function(){
+            $('.modal .close').click(function(){
+                $('.modal').fadeOut();
+            });
+            $('.thumbnail').click(function(){
+                $('.modal').fadeIn();
+            });
+        });
+    </script>
+    
+</body>
+</html>
