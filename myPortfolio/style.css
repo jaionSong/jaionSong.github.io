@@ -295,19 +295,19 @@ img{
 }
 
 .close{
-    width: 6%;
-    height: 70px;
-    background-color: rgba(0, 0, 0, 0.2);
+    width: 5%;
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.4);
+    background-image: url("images/close.png");
+    background-size: cover;
+    background-repeat: no-repeat;
     position: absolute;
     right: 20%;
 }
 
-.close>p{
-    font-size: 65px;
-    font-weight: lighter;
-    color: #fff;
+/* .close>img{
     padding: 0 14px;
-}
+} */
 
 /* footer */
 footer{
