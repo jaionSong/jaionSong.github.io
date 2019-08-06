@@ -7,15 +7,31 @@
     3) 1024~ px (wide screen)
 */
 
-@font-face{
-    font-family: "Gilroy";
-    src: url("fonts/Gilroy-Bold.woff"), url("fonts/Gilroy-Light.woff");
-}
+@font-face {
+    font-family: 'Gilroy-Light';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Gilroy-Light'), url('fonts/Gilroy-Light.woff') format('woff');
+    }
+
+@font-face {
+    font-family: 'Gilroy-Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Gilroy-Bold'), url('fonts/Gilroy-Bold.woff') format('woff');
+    }
+
+@font-face {
+    font-family: 'Gilroy-Heavy';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Gilroy-Heavy'), url('fonts/Gilroy-Heavy.woff') format('woff');
+    }
 
 * {
     margin: 0;
     padding: 0;
-    font-family: "Gilroy", sans-serif;
+    font-family: "Gilroy-Bold", sans-serif;
     font-size: 10px;
 }
 
@@ -67,7 +83,7 @@
 .navbar nav ul li a{
     text-decoration: none;
     color: #253538;
-    font-family: "Gilroy-Bold";
+    font-family: 'Gilroy-Bold';
     font-size: 2.1428vw; /*30px*/
 }
 
@@ -98,6 +114,7 @@
 
 .profile_text>p{
     font-size: 2.1428vw; /*30px*/
+    font-family: 'Gilroy-Light';
 }
 
 .profile{
@@ -114,7 +131,8 @@
 
 .logo_icon{
     width: 100%;
-    background-color: #bfcfb2;
+    /* background-color: #bfcfb2; */
+    background-color: #8ba889;
     /* overflow: auto; */
     overflow: hidden;
     position: relative;
@@ -129,7 +147,8 @@
 
 .web{
     width: 100%;
-    background-color: #8ba889;
+    /* background-color: #8ba889; */
+    background-color: #bfcfb2;
     /* overflow: auto; */
     overflow: hidden;
     position: relative;
@@ -333,7 +352,7 @@
     margin-left: 10.3571vw; /* 145px */
     margin-bottom: 2.9285vw; /* 41px */
     margin-right: 0;
-    font-family: "Gilroy-ExtraBold";
+    font-family: "Gilroy-Bold";
     font-size: 3.4285vw;
     color: #e3e7d9;
     display: block;
@@ -408,7 +427,7 @@
 .btn_send>p{
     font-size: 2vw; /* 48px */
     color: #e3e7d9;
-    font-family: "Gilroy-ExtraBold";
+    font-family: "Gilroy-Bold";
     margin: 1.2857vw auto; /* 18px */
 }
 
