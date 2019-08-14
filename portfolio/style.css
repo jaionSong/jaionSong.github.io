@@ -114,7 +114,7 @@
 
 .profile_text>p{
     font-size: 2.1428vw; /*30px*/
-    font-family: 'Gilroy-Light';
+    font-family: 'Gilroy-Light', sans-serif;
 }
 
 .profile{
