@@ -96,6 +96,8 @@
 }
 
 .about{
+    
+    font-family: 'Gilroy-Light';
     width: 100%;
     height: 55vw; /*770px*/
     background-color: #e3e7d9;
